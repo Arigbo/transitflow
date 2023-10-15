@@ -40,6 +40,15 @@ body .home_header_inner_left_switch i {
   font-size: 1.4rem;
   color: #ffbe34;
 }
+body .home_header_inner_left_switch .fa-bars.hide {
+  display: none;
+}
+body .home_header_inner_left_switch .fa-x {
+  display: none;
+}
+body .home_header_inner_left_switch .fa-x.show {
+  display: block;
+}
 body .home_header_inner_left_inner {
   display: none;
 }
@@ -85,17 +94,8 @@ body .home_hero {
 body .home_hero.show {
   display: block;
 }
-body .home_hero i {
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 1.4rem;
-}
 body .home_hero h6 {
-  color: #ffffff;
-  font-weight: bold;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: small;
-  font-weight: 100;
+  font-size: 1.4rem;
   margin: 0;
   padding: 0;
 }
@@ -106,24 +106,23 @@ body .home_hero_inner {
 }
 body .home_hero_inner ul {
   width: 100%;
-  text-align: center;
-  gap: 1rem;
-}
-body .home_hero_inner ul li {
-  list-style: none;
-  cursor: pointer;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 body .home_hero_inner_right {
   display: none;
 }
 body .home_hero_inner_left i {
-  font-size: 0.5rem;
+  font-size: 1rem;
 }
 body .home_hero_inner_left li {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 100;
+  text-align: center;
   list-style: none;
   border-right: 0.00001px solid white;
-  padding-inline-end: 1.5rem;
+  border-left: 0.00001px solid white;
   cursor: pointer;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }

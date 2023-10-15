@@ -26,6 +26,7 @@
 
                     <div class="home_header_inner_left_switch">
                         <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-x"></i>
                     </div>
                     <div class="home_header_inner_left_inner">
                         <div class="home_header_inner_left_inner_clock">
@@ -107,16 +108,15 @@
         </div>
     </div>
     <script>
-        document.querySelector(".fa-bars").addEventListener("click", () => document.querySelector(".home_hero").classList.toggle("show"))
-        document.querySelector("#fa-chevron-down").addEventListener("click", () => {
-            document.querySelector(".home_header_inner_left_inner").classList.toggle("show")
-            document.querySelector(".fa-chevron-up").classList.toggle("show")
-            document.querySelector(".fa-chevron-down").classList.toggle("hide")
+        document.querySelector(".fa-bars").addEventListener("click", () => {
+            document.querySelector(".home_hero").classList.toggle("show")
+            document.querySelector(".fa-x").classList.toggle("show")
+            document.querySelector(".fa-bars").classList.toggle("hide")
         })
-        document.querySelector(".fa-chevron-up").addEventListener("click", () => {
-            document.querySelector(".home_header_inner_left_inner").classList.toggle("show")
-            document.querySelector(".fa-chevron-up").classList.toggle("show")
-            document.querySelector(".fa-chevron-down").classList.toggle("hide")
+        document.querySelector(".fa-x").addEventListener("click", () => {
+            document.querySelector(".home_hero").classList.toggle("show")
+            document.querySelector(".fa-x").classList.toggle("show")
+            document.querySelector(".fa-bars").classList.toggle("hide")
         })
                     
     </script>
