@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/images/Background.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .home_header {
+  width: 100%;
+  background-color: #091242;
+  padding-block: 0.5rem;
+  font-family: var(--fa-style-family, "Font Awesome 6 Free");
+}
+body .home_header_inner {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+body .home_header_inner_right {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .home_header_inner_right i {
+  font-size: 1.4rem;
+  color: #ffbe34;
+  margin-inline-end: 0.4rem;
+}
+body .home_header_inner_left h6 {
+  margin: 0 0 0 0.4rem;
+  padding: 0;
+  text-align: left;
+  color: #fff;
+}
+body .home_header_inner_left_inner i {
+  font-size: 1.2rem;
+  color: #ffbe34;
+  padding-inline: 1.2rem 0.4rem;
+  padding-block: 1.2rem 0.4rem;
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid #061569;
+  border-radius: 50%;
+}
+body .home_header_inner_left_inner_clock_inner {
+  display: flex;
+  align-items: center;
+}
+body .home_header_inner_left_inner_envelope_inner {
+  display: flex;
+  align-items: center;
+}
+body .home_header_inner_left_inner_envelope_inner h6 {
+  margin: 0 0 0 0.4rem;
+  padding: 0;
+  text-align: left;
+}
+body .home_header_inner_left_inner_phone_inner {
+  display: flex;
+  align-items: center;
+}
+body .home_header_inner_left_inner_phone_inner h6 {
+  margin: 0 0 0 0.4rem;
+  padding: 0;
+  text-align: left;
+}
+body .home_hero {
+  padding-inline: 3.3rem;
+  background-color: #000000;
+  opacity: 0.6;
+}
+body .home_hero.remove {
+  display: none;
+}
+body .home_hero i {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+body .home_hero h6 {
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: small;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+body .home_hero.enhance {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+body .home_hero_inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .home_hero_inner ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+body .home_hero_inner ul li {
+  list-style: none;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body .home_hero_inner_right {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+body .home_hero_inner_right_button button {
+  height: 100%;
+  margin: 0;
+  padding: 1rem;
+  border-radius: 0;
+  border: none;
+}
+body .home_hero_inner_left i {
+  font-size: 0.5rem;
+}
+body .home_hero_inner_left li {
+  list-style: none;
+  border-right: 0.00001px solid white;
+  padding-inline-end: 1.5rem;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body .home_hero_inner_left li:nth-child(3) {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+@media screen and (min-width: 992px) {
+  body .home_header_inner_left_inner {
+    display: flex;
+    gap: 2rem;
+  }
+  body .home_header_inner_left_inner_clock_inner_text {
+    display: none;
+  }
+  body .home_header_inner_left_inner_envelope_inner_text {
+    display: none;
+  }
+  body .home_header_inner_left_inner_phone_inner_text {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body .home_header {
+    padding-block: 2rem;
+  }
+  body .home_header_inner {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  body .home_header_inner_right {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .home_header_inner_right i {
+    font-size: 1.4rem;
+    color: #ffbe34;
+    margin-inline-end: 0.4rem;
+  }
+  body .home_header_inner_left_inner_clock_inner {
+    display: flex;
+    align-items: center;
+  }
+  body .home_header_inner_left_inner_clock_inner_text {
+    display: block;
+  }
+  body .home_header_inner_left_inner_envelope_inner {
+    display: flex;
+    align-items: center;
+  }
+  body .home_header_inner_left_inner_envelope_inner_text {
+    display: block;
+  }
+  body .home_header_inner_left_inner_phone_inner {
+    display: flex;
+    align-items: center;
+  }
+  body .home_header_inner_left_inner_phone_inner_text {
+    display: block;
+  }
+  body .home_header_inner_left_inner_phone_inner h6 {
+    margin: 0 0 0 0.4rem;
+    padding: 0;
+    text-align: left;
+  }
+  body .home_hero {
+    padding-inline: 3.3rem;
+    background-color: #000000;
+    opacity: 0.6;
+  }
+  body .home_hero.remove {
+    display: none;
+  }
+  body .home_hero i {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  body .home_hero h6 {
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: small;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+  }
+  body .home_hero.enhance {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+  body .home_hero_inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .home_hero_inner ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  body .home_hero_inner ul li {
+    list-style: none;
+    cursor: pointer;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  body .home_hero_inner_right {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  body .home_hero_inner_right_button button {
+    height: 100%;
+    margin: 0;
+    padding: 1rem;
+    border-radius: 0;
+    border: none;
+  }
+  body .home_hero_inner_left i {
+    font-size: 0.5rem;
+  }
+  body .home_hero_inner_left li {
+    list-style: none;
+    border-right: 0.00001px solid white;
+    padding-inline-end: 1.5rem;
+    cursor: pointer;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  body .home_hero_inner_left li:nth-child(3) {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+  }
+}/*# sourceMappingURL=index.css.map */
