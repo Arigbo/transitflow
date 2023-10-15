@@ -13,17 +13,16 @@ body {
             font-family: var(--fa-style-family, "Font Awesome 6 Free");
 
             &_inner {
-                display: grid;
-                grid-template-columns: 0.5fr 1fr;
-                justify-content: center;
+
+                padding-inline: 2rem;
+                display: flex;
+                justify-content: space-between;
                 align-items: center;
 
                 &_right {
                     color: #fff;
-                    // width: 100%;
                     display: flex;
                     align-items: center;
-                    justify-content: center;
 
                     i {
                         font-size: 1.4rem;
@@ -34,8 +33,6 @@ body {
 
                 &_left {
 
-                  
-
                     h6 {
                         margin: 0 0 0 0.4rem;
                         padding: 0;
@@ -43,7 +40,20 @@ body {
                         color: #fff;
                     }
 
+                    &_switch {
+
+                        i {
+                            border: 1px solid;
+                            padding: 0.5rem;
+                            font-weight: bold;
+                            font-size: 1.4rem;
+                            color: #ffbe34;
+                        }
+                    }
+
                     &_inner {
+                        display: none;
+
                         i {
                             font-size: 1.4rem;
                             color: #ffbe34;
@@ -55,6 +65,7 @@ body {
                             border: 1px solid #061569;
                             border-radius: 50%; // margin: 0.5rem;
                         }
+
                         &_clock {
                             &_inner {
                                 display: flex;
@@ -96,10 +107,12 @@ body {
 
 
         &_hero {
-            padding-inline: 3.3rem;
 
-            &.remove {
-                display: none;
+            padding-inline: 3.3rem;
+            display: none;
+
+            &.show {
+                display: block;
 
             }
 
@@ -123,25 +136,17 @@ body {
                 padding: 0;
             }
 
-            &.enhance {
-                -webkit-backdrop-filter: blur(10px);
-                backdrop-filter: blur(10px);
-
-            }
-
 
             &_inner {
-                width: 100%;
-                // background-color: #151d4c;
-                display: flex;
+           
                 justify-content: space-between;
                 align-items: center;
+                padding-block: 0.5rem;
 
                 ul {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    gap: 1rem;
+                    width: 100%;
+                   text-align: center;
+                   gap: 1rem;
 
                     li {
                         list-style: none;
@@ -151,20 +156,8 @@ body {
                 }
 
                 &_right {
-                    display: flex;
-                    gap: 2rem;
-                    align-items: center;
+                    display: none;
 
-                    &_button {
-
-                        button {
-                            height: 100%;
-                            margin: 0;
-                            padding: 1rem;
-                            border-radius: 0;
-                            border: none;
-                        }
-                    }
                 }
 
                 &_left {
@@ -181,15 +174,60 @@ body {
                     }
 
                     li:nth-child(3) {
-                        display: flex;
-                        align-items: center;
-                        gap: 0.2rem;
+                        // display: flex;
+                        // align-items: center;
+                        // gap: 0.2rem;
                     }
                 }
             }
         }
 
-        // @media screen and (min-width:992px) {}
+        @media screen and (min-width:992px) {
+            &_header {
+                padding-block: 2rem;
+
+                &_inner {
+
+                    &_right {}
+
+                    &_left {
+                        &_inner {
+                            display: flex;
+                            gap: 2rem;
+
+                            &_clock {
+                                &_inner {
+
+                                    &_text {
+                                        display: none;
+                                    }
+
+                                }
+                            }
+
+                            &_envelope {
+                                &_inner {
+
+                                    &_text {
+                                        display: none;
+                                    }
+                                }
+                            }
+
+                            &_phone {
+                                &_inner {
+
+
+                                    &_text {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
         @media screen and (min-width:1200px) {
             &_header {
@@ -217,59 +255,50 @@ body {
 
                     &_left {
 
-                        display: flex;
-                        gap: 2rem;
+                        &_inner {
+                            &_clock {
+                                &_inner {
+                                    display: flex;
+                                    align-items: center;
 
-                        i {
-                            font-size: 1.4rem;
-                            color: #ffbe34;
-                            padding-inline: 0.9rem;
-                            padding-block: 1.2rem 0.5rem;
-                            text-align: center;
-                            height: 2rem;
-                            width: 2rem;
-                            border: 1px solid #061569;
-                            border-radius: 50%; // margin: 0.5rem;
-                        }
+                                    &_text {
+                                        display: block;
+                                    }
 
-                        h6 {
-                            margin: 0 0 0 0.4rem;
-                            padding: 0;
-                            text-align: left;
-                            color: #fff;
-                        }
-
-                        &_clock {
-                            &_inner {
-                                display: flex;
-                                align-items: center;
-
-
-                            }
-                        }
-
-                        &_envelope {
-                            &_inner {
-                                display: flex;
-                                align-items: center;
-
-                                h6 {
-                                    margin: 0 0 0 0.4rem;
-                                    padding: 0;
-                                    text-align: left;
                                 }
                             }
-                        }
 
-                        &_phone {
-                            &_inner {
-                                display: flex;
-                                align-items: center;
+                            &_envelope {
+                                &_inner {
+                                    display: flex;
+                                    align-items: center;
 
-                                h6 {
-                                    margin: 0 0 0 0.4rem;
-                                    padding: 0;
-                                    text-align: left;
+                                    &_text {
+                                        display: block;
+                                    }
+
+                                    h6 {
+                                        margin: 0 0 0 0.4rem;
+                                        padding: 0;
+                                        text-align: left;
+                                    }
+                                }
+                            }
+
+                            &_phone {
+                                &_inner {
+                                    display: flex;
+                                    align-items: center;
+
+                                    &_text {
+                                        display: block;
+                                    }
+
+                                    h6 {
+                                        margin: 0 0 0 0.4rem;
+                                        padding: 0;
+                                        text-align: left;
+                                    }
                                 }
                             }
                         }
@@ -373,3 +402,4 @@ body {
             }
         }
     }
+}
