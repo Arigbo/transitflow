@@ -22,37 +22,43 @@
                     </div>
                 </div>
                 <div class="home_header_inner_left">
-                 
-
                     <div class="home_header_inner_left_switch">
                         <i class="fa-solid fa-bars"></i>
                         <i class="fa-solid fa-x"></i>
                     </div>
+                    <div class="home_header_inner_left_button">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
                     <div class="home_header_inner_left_inner">
                         <div class="home_header_inner_left_inner_clock">
-                            <div class="home_header_inner_left_inner_clock_inner">
-                                <div class="home_header_inner_left_inner_clock_inner_icon">
+                            <div >
+                                <a href="" class="home_header_inner_left_inner_clock_inner">
+                                    <div class="home_header_inner_left_inner_clock_inner_icon">
                                     <i class="fa-solid fa-clock"></i>
                                 </div>
                                 <div class="home_header_inner_left_inner_clock_inner_text">
                                     <h6>Mon-Sat 9.00 - 18.00</h6>
                                     <h6>Sunday Closed</h6>
                                 </div>
+                                </a>
                             </div>
                         </div>
                         <div class="home_header_inner_left_inner_envelope">
-                            <div class="home_header_inner_left_inner_envelope_inner">
-                                <div class="home_header_inner_left_inner_envelope_inner_icon">
+                            <div >
+                                <a href="mailto:contact@logistics.com" class="home_header_inner_left_inner_envelope_inner">
+                                    <div class="home_header_inner_left_inner_envelope_inner_icon">
                                     <i class="fa-solid fa-envelope"></i>
                                 </div>
                                 <div class="home_header_inner_left_inner_envelope_inner_text">
                                     <h6>Email</h6>
                                     <h6>contact@logistics.com</h6>
                                 </div>
+                                </a>
                             </div>
                         </div>
                         <div class="home_header_inner_left_inner_phone">
-                            <div class="home_header_inner_left_inner_phone_inner">
+                            <a href="tel:+2348156996319" class="home_header_inner_left_inner_phone_inner">
                                 <div class="home_header_inner_left_inner_phone_inner_icon">
                                     <i class="fa-solid fa-phone"></i>
                                 </div>
@@ -60,31 +66,32 @@
                                     <h6>Call Us</h6>
                                     <h6>(00) 112 365 489</h6>
                                 </div>
-                            </div>
-
+                            </a>
                         </div>
                     </div>
+
+
                 </div>
             </div>
         </div>
         <div class="home_hero">
-          
+
             <div class="home_hero_inner">
                 <div class="home_hero_inner_left">
                     <ul>
-                        <li>
+                        <li class="home">
                             <h6>Home</h6>
                         </li>
-                        <li>
+                        <li class="about">
                             <h6>About</h6>
                         </li>
-                        <li>
+                        <li class="pages">
                             <h6>Pages</h6> <i class="fa-solid fa-chevron-down"></i>
                         </li>
-                        <li>
+                        <li class="project">
                             <h6>Project</h6>
                         </li>
-                        <li>
+                        <li class="contacts">
                             <h6>Contacts</h6>
                         </li>
                     </ul>
@@ -118,7 +125,18 @@
             document.querySelector(".fa-x").classList.toggle("show")
             document.querySelector(".fa-bars").classList.toggle("hide")
         })
-                    
+        document.querySelector(".fa-chevron-up").addEventListener("click", () => {
+            document.querySelector(".home_header_inner_left_inner").classList.toggle("active")
+            document.querySelector(".fa-chevron-down").classList.toggle("active")
+            document.querySelector(".fa-chevron-up").classList.toggle("de-active")
+        })
+
+        document.querySelector(".fa-chevron-down").addEventListener("click", () => {
+            document.querySelector(".home_header_inner_left_inner").classList.toggle("active")
+            document.querySelector(".fa-chevron-up").classList.toggle("de-active")
+            document.querySelector(".fa-chevron-down").classList.toggle("active")
+        })
+
     </script>
 </body>
 
